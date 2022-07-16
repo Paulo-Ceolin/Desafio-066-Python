@@ -1,0 +1,16 @@
+'''Crie um programa que leia números inteiros pelo teclado.
+O programa só vai parar quando o usuário digitar o valor 999,
+que é a condição de parada. No final, mostre quantos números
+foram digitados e qual foi a soma entre elas (desconsiderando o flag).'''
+
+user_number = add = total_numbers = 0
+while True:
+    user_number = int(input(f"-> Type any number, type 999 to stop: "))
+    if user_number == 999:
+        break
+    add += user_number
+    total_numbers += 1
+print(f"\n>>> [ The total sum is: {add} ]\n"
+   f">>> [ Numbers typed: {total_numbers} ]\n"
+   ">>> [ END ]")
+   
